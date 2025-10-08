@@ -1,0 +1,20 @@
+site_name: Documentation Service 
+site_description: Documentation Templane
+
+
+nav:
+- Documentation:
+  - about AItool: 'docs/AItool.md'
+- D-Link Device for matter:
+    - Version1.1: 'docs/matter1.1.md'
+- Test:
+    -test: 'docs/TEST.md'
+
+ 
+  
+plugins:
+  - exclude:
+      regex:
+        - '.*(^|\/)snippets\/.*$'
+      glob:
+        - docs/sites/*

@@ -1,0 +1,16 @@
+/* 列印時換頁 */
+@media print {
+  .my-page-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+}
+
+/* 網頁上顯示淡淡的分隔線（可選） */
+@media screen {
+  .my-page-break-before {
+    border-top: 1px dashed #ddd;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+}

@@ -1,20 +1,28 @@
-site_name: Documentation Service 
-site_description: Documentation With Matter
+site_name: My Documentation
+site_description: Documentation Templane
 
+theme:
+  name: material
+  language: zh-TW
+  
+docs_dir: docs
 
 nav:
-- Documentation:
-  - about AItool: 'src/AItool.md'
-- D-Link Device for matter:
-    - Version1.1: 'src/matter1.1.md'
-- Test:
-    -test: 'src/TEST.md'
+  - 首頁: index.md
+  - Extensions:
+      - Includes: extensions/includes/index.md
+      - Material: extensions/material/index.md
+      - Mermaid: extensions/mermaid/index.md
 
- 
-  
-plugins:
-  - exclude:
-      regex:
-        - '.*(^|\/)snippets\/.*$'
-      glob:
-        - src/sites/*
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css

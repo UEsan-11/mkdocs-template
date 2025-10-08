@@ -1,1 +1,17 @@
-docker/
+# MkDocs 生成檔案
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 系統檔案
+.DS_Store
+._*
+
+# Docker（如果不想推送 Dockerfile 的話可以保留）
+# docker/
+
+# 暫存檔
+*.tmp
+*.bak
