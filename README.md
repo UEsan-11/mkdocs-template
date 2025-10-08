@@ -1,11 +1,24 @@
-# MkDocs Template (Docker Version)
+# MkDocs Template 
 
-用 Docker 快速啟動 MkDocs，將 Markdown (.md) 文件轉成 HTML 頁面在本機預覽。
+MD -> HTML
 
 ---
 
-## 🚀 使用方式
+## 使用方式
 
-### 1️⃣ 下載現成 Image
+### 下載Image
+
 ```bash
 docker pull elyse11/mkdocs:latest
+```
+------
+
+### 執行
+
+```bash
+docker run --name docs --rm -p 8888:8000 -v "$(pwd)/src":/root/mkdocs/docs elyse11/mkdocs:latest
+```
+
+
+
+
